@@ -1,0 +1,25 @@
+CREATE TABLE store (item_number INTEGER PRIMARY KEY, name TEXT, price INTEGER, color TEXT, size TEXT);
+INSERT INTO store VALUES (1, "plant_mama", 5, "green", "medium");
+INSERT INTO store VALUES (2, "thin", 7, "clear", "small");
+INSERT INTO store VALUES (3, "trees", 10, "blue", "large");
+INSERT INTO store VALUES (4, "snowman", 7, "white", "large");
+INSERT INTO store VALUES (5, "thermal", 20, "black", "large");
+INSERT INTO store VALUES (6, "thermal", 20, "blue", "large");
+INSERT INTO store VALUES (7, "initial_C", 12, "orange", "medium");
+INSERT INTO store VALUES (8, "initial_m", 12, "black", "medium");
+INSERT INTO store VALUES (9, "initial_e", 12, "blue",  "medium");
+INSERT INTO store VALUES (10, "initial_s", 12, "green", "medium");
+INSERT INTO store VALUES (11, "initial_e", 12, "orange", "medium");
+INSERT INTO store VALUES (12, "initial_m", 12, "pink", "medium");
+INSERT INTO store VALUES (13, "initial_g", 12, "black", "medium");
+INSERT INTO store VALUES (14, "initial_s", 12, "yellow", "medium");
+INSERT INTO store VALUES (15, "dots", 15, "blue", "large");
+-dislplay the database ordered by size
+SELECT * FROM store ORDER BY size;
+
+-display the database ordered by price
+SELECT * FROM store ORDER BY price;
+
+--display the database ordered by price more than $10
+SELECT * FROM store WHERE  price > 10 ORDER BY price
+
